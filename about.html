@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program Studi Teknologi Produksi Tanaman Perkebunan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #07680a;
+            color: white;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header img {
+            max-width: 100px;
+            height: auto;
+            padding: 5px; /* Padding agar terlihat lebih baik */
+            border-radius: 5px; /* Sudut membulat (opsional) */
+        }
+        header h1, header h2 {
+            margin: 5px;
+            text-align: center;
+            flex-basis: 100%; /* Agar judul di tengah */
+        }
+        nav {
+            background-color: #00ff15;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px; /* Sesuaikan margin */
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ccea07;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3e11af;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 10px;
+            text-align: left;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ccea07;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero {
+            position: relative;
+            background: url('images/gambar-kampus.jpg') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .hero h1, .hero p {
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 36px; /* Sesuaikan ukuran font */
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px; /* Sesuaikan ukuran font */
+        }
+        .content-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #c6a420;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-section h2 {
+            color: #006400;
+            margin-bottom: 20px;
+        }
+        .content-section p {
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #006400;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 24px; /* Ukuran font untuk layar kecil */
+            }
+            .hero p {
+                font-size: 16px; /* Ukuran font untuk layar kecil */
+            }
+            nav {
+                flex-direction: column; /* Vertical untuk menu di layar kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="flex: 1; display: flex; justify-content: flex-start;">
+            <img src="images/logo-kampus-transparent.png" alt="Logo Kampus">
+        </div>
+        <div style="flex: 2; text-align: center;">
+            <h2>PROGRAM STUDI </h2>
+            <h2>TEKNOLOGI PRODUKSI TANAMAN PERKEBUNAN</h2>
+            <h2>POLITEKNIK KELAPA SAWIT CITRA WIDYA EDUKASI</h2>
+        </div>
+        <div style="flex: 1; display: flex; justify-content: flex-end;">
+            <img src="images/logo-prodi-transparent.png" alt="Logo Program Studi">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="login.html">Login</a>
+        <div class="dropdown">
+            <a href="#">Tentang Kami</a>
+            <div class="dropdown-content">
+                <a href="visi-misi.html">Visi dan Misi</a>
+                <a href="sambutan-kepala.html">Sambutan Kepala Program Studi</a>
+                <a href="sejarah.html">Sejarah Program Studi</a>
+                <a href="fasilitas.html">Fasilitas Program Studi</a>
+                <a href="struktur.html">Struktur Organisasi Program Studi</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Galeri</a>
+            <div class="dropdown-content">
+                <a href="galeri-dosen.html">Galeri Dosen</a>
+                <a href="galeri-himaprodi.html">Galeri Himaprodi</a>
+                <a href="galeri-kegiatan.html">Galeri Kegiatan Program Studi</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Akademik</a>
+            <div class="dropdown-content">
+                <a href="jadwal-kuliah.html">Jadwal Kuliah</a>
+                <a href="program-himaprodi.html">Program Himaprodi</a>
+                <a href="data-mahasiswa.html">Data Mahasiswa</a>
+                <a href="data-alumni.html">Data Alumni</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Jurnal</a>
+            <div class="dropdown-content">
+                <a href="jurnal-pkl.html">Praktik Kerja Lapangan</a>
+                <a href="jurnal-kkp.html">Kuliah Kerja Profesi</a>
+                <a href="jurnal-skripsi.html">Skripsi</a>
+                <a href="jurnal-penelitian.html">Penelitian</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Membangun Masa Depan Perkebunan Indonesia</h1>
+        <p>Teknologi, Inovasi, dan Penerapan Praktis</p>
+    </div>
+
+    <div class="content-section" id="about-campus">
+        <h2>Tentang Program Studi</h2>
+        <p>
+            Program Studi Teknologi Produksi Tanaman Perkebunan di Politeknik Kelapa Sawit Citra Widya Edukasi 
+            bertujuan untuk menghasilkan lulusan yang siap menghadapi tantangan di industri perkebunan. 
+            Lulusan program ini dibekali dengan pengetahuan dan keterampilan yang dibutuhkan untuk 
+            mengelola tanaman perkebunan secara efektif dan berkelanjutan.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Teknologi Produksi Tanaman Perkebunan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
